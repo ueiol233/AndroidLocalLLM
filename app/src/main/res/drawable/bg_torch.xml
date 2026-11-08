@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 手电筒开启：半透明黄色圆形背景 -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#40FFC400" />
+        </shape>
+    </item>
+    <!-- 手电筒关闭：半透明白背景 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#33FFFFFF" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_toggle_thinking"
+        android:title="@string/toggle_thinking"
+        android:icon="@drawable/ic_thinking_on"
+        app:iconTint="@android:color/white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_new_problem"
+        android:title="@string/new_problem"
+        android:icon="@drawable/ic_add"
+        app:iconTint="@android:color/white"
+        app:showAsAction="always" />
+</menu>

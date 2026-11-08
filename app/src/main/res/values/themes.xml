@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主主题：NoActionBar，系统 ActionBar 关闭，仅保留布局中的 MaterialToolbar（避免双重标题栏） -->
+    <style name="Theme.拍照解题" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- 状态栏与 toolbar 同色：非全屏界面都带 primary 工具栏，状态栏用 primary 融为一体，杜绝遮挡/割裂感 -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <!-- 相机主题：显示状态栏，黑色状态栏/导航栏，配合相机深色画面 -->
+    <style name="Theme.拍照解题.Capture" parent="Theme.拍照解题">
+        <!-- 状态栏：整屏相机画面通常偏暗/黑，用黑色状态栏承载浅色状态栏图标，保证可读性 -->
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>

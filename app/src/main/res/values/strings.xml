@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidLocalLLM</string>
+
+    <!-- Main -->
+    <string name="take_photo">拍照</string>
+    <string name="select_model">选择模型</string>
+    <string name="no_model_selected">未选择模型</string>
+    <string name="model_not_found">未找到模型，请将模型放入 /sdcard/AIModel/</string>
+
+    <!-- Capture -->
+    <string name="capture_title">拍照识题</string>
+    <string name="capture_hint">对准文字拍照</string>
+    <string name="shutter">拍照</string>
+    <string name="gallery">相册</string>
+
+    <!-- Confirm -->
+    <string name="confirm_title">确认结果</string>
+    <string name="confirm_hint">请检查并修改识别结果</string>
+    <string name="submit">发送</string>
+    <string name="retake">重拍</string>
+
+    <!-- Chat -->
+    <string name="chat_title">解题对话</string>
+    <string name="ask_followup">输入问题…</string>
+    <string name="send">发送</string>
+    <string name="new_problem">新题目</string>
+    <string name="toggle_thinking">切换思考模式</string>
+    <string name="thinking_on_tip">思考已开启：下一轮回答将展示思考过程</string>
+    <string name="thinking_off_tip">思考已关闭：下一轮回答将直接给出答案</string>
+    <string name="thinking">思考中…</string>
+    <string name="generating">正在生成…</string>
+    <string name="model_loading">模型加载中…</string>
+    <string name="main_empty_hint">问点什么,或点击左下角拍照</string>
+    <string name="history_title">历史对话</string>
+    <string name="settings_title">设置</string>
+    <string name="model_settings_title">选择模型</string>
+    <string name="inference_settings_title">推理设置</string>
+    <string name="confirm_photo_title">确认题目（将直接进入对话）</string>
+
+    <!-- Inference settings -->
+    <string name="inference_settings_page_title">推理设置</string>
+    <string name="inference_settings_saved">已保存设置（下次加载模型时生效）</string>
+    <string name="inference_settings_reset">已恢复默认值</string>
+    <string name="prompt_label">系统提示词</string>
+    <string name="prompt_hint">自定义模型系统提示词</string>
+    <string name="temperature_label">温度 (Temperature)</string>
+    <string name="temperature_hint">0.0 ~ 2.0（默认 0.3）</string>
+    <string name="top_p_label">Top-p (核采样)</string>
+    <string name="top_p_hint">0.0 ~ 1.0（默认 0.9；1.0 禁用）</string>
+    <string name="top_k_label">Top-k (固定数量采样)</string>
+    <string name="top_k_hint">1 ~ 100（默认 40）</string>
+    <string name="presence_penalty_label">存在惩罚 (Presence Penalty)</string>
+    <string name="presence_penalty_hint">0.0 禁用；正值鼓励引入新主题</string>
+    <string name="frequency_penalty_label">频率惩罚 (Frequency Penalty)</string>
+    <string name="frequency_penalty_hint">0.0 禁用；正值抑制重复用词</string>
+    <string name="stop_strings_label">停止序列 (Stop Sequences)</string>
+    <string name="stop_strings_hint">用逗号分隔；命中任一即停止</string>
+    <string name="max_tokens_label">最大生成长度 (Max Tokens)</string>
+    <string name="max_tokens_hint">64 ~ 4096</string>
+    <string name="context_len_label">上下文长度</string>
+    <string name="context_len_hint">512 ~ 8192</string>
+    <string name="threads_label">推理线程数</string>
+    <string name="threads_hint">1 ~ 16</string>
+    <string name="thinking_budget_label">思考长度上限（tokens）</string>
+    <string name="thinking_budget_hint">-1 不限制；如 384</string>
+    <string name="thinking_start_tag_label">思考开始标记</string>
+    <string name="thinking_start_tag_hint">如 思考 / thinking</string>
+    <string name="thinking_end_tag_label">思考结束标记</string>
+    <string name="thinking_end_tag_hint">如 回答： / response</string>
+    <string name="thinking_tag_note">千问(Qwen3)用 thinking / response；混元请按实际输出填写</string>
+    <string name="save_settings">保存设置</string>
+    <string name="reset_settings">恢复默认</string>
+
+    <!-- Errors -->
+    <string name="error_camera">相机启动失败</string>
+    <string name="error_ocr">文字识别失败</string>
+    <string name="error_model">模型加载失败</string>
+    <string name="error_no_model_dir">未找到 /sdcard/AIModel/ 目录</string>
+</resources>

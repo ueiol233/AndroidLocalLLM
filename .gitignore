@@ -1,0 +1,32 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# 构建产物
+app/build
+app/release
+
+# 大体积参考资料 / 归档（勿入库）
+/参考
+/archive
+
+# 临时日志
+log.txt
+temp.txt
+native_build.log
+
+# Kotlin / IDE
+.kotlin
+.idea
